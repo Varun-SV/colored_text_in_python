@@ -1,4 +1,5 @@
 # Colored Text Using in Python
+---
 The  attatched is the pyton file for printing in the colored format.
 Using the provided method you can print with any combination without any hasssle.
 #How to USE:
@@ -7,3 +8,4 @@ Using the provided method you can print with any combination without any hasssle
 # Calling the function will do the work of printing for you.
 This is just an Implementation to make easy to use module for everyone.
 Enjoy ***PRINTING***
+---
