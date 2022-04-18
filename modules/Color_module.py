@@ -83,6 +83,6 @@ col={0:COLOR.END,
 def prints(string,opt,ends):###Takes a string, a list of all the combination and the end delimiter and prints the combinations
   temp=""
   for i in opt:
-    temp+=col[i]
+    temp+=col[i%35]
   temp+=string
   print(temp+col[0],end=ends)
