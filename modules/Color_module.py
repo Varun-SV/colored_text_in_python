@@ -87,7 +87,7 @@ def prints(string,opt,ends):###Takes a string, a list of all the combination and
   temp+=string
   print(temp+col[0],end=ends)
   
-def text_return(string,opt,ends):###Takes a string, a list of all the combination and the end delimiter and prints the combinations
+def text_return(string,opt,ends):###Takes a string, a list of all the combination and the end delimiter and returns the combinations
   temp=""
   for i in opt:
     temp+=col[i%35]
