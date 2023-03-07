@@ -80,14 +80,14 @@ col={0:COLOR.END,
      35:COLOR.WHITE_HIGHLIGHT
      }
 #function to make printing each stuff easy...
-def prints(string,opt,ends):###Takes a string, a list of all the combination and the end delimiter and prints the combinations
+def prints(string,opt,ends='\n'):###Takes a string, a list of all the combination and the end delimiter and prints the combinations
   temp=""
   for i in opt:
     temp+=col[i%35]
   temp+=string
   print(temp+col[0],end=ends)
   
-def text_return(string,opt,ends):###Takes a string, a list of all the combination and the end delimiter and returns the combinations
+def text_return(string,opt,ends='\n'):###Takes a string, a list of all the combination and the end delimiter and returns the combinations
   temp=""
   for i in opt:
     temp+=col[i%35]
