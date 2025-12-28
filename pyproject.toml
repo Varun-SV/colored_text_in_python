@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68,<72", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colored_text"
+version = "0.1.0"
+description = "Lightweight utilities for applying ANSI colors and styles to Python text output."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Varun S V" }]
+keywords = ["ansi", "terminal", "color", "print", "text"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Terminals",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "build>=1.2", "twine>=4.0"]
+
+[project.urls]
+Homepage = "https://github.com/Varun-SV/colored_text_in_python"
+Repository = "https://github.com/Varun-SV/colored_text_in_python"
+Issues = "https://github.com/Varun-SV/colored_text_in_python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
