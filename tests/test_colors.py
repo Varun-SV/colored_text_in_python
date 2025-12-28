@@ -1,3 +1,5 @@
+import pytest
+
 from colored_text import Style, available_styles, colorize, print_colored
 
 
@@ -13,12 +15,8 @@ def test_colorize_accepts_string_styles_case_insensitive():
 
 
 def test_invalid_style_raises_value_error():
-    try:
+    with pytest.raises(ValueError, match="Unknown style"):
         colorize("text", "not-a-style")
-    except ValueError as exc:
-        assert "Unknown style" in str(exc)
-    else:
-        raise AssertionError("Expected ValueError for invalid style")
 
 
 def test_print_colored_writes_to_stdout(capsys):
